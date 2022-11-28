@@ -1,3 +1,5 @@
+import {css} from 'styled-components';
+
 const color = {
   main: {
     main: '#8291E6',
@@ -25,4 +27,25 @@ const layout = {
   headerHeight: '50px',
 };
 
-export {color, layout};
+const font = {
+  sans: {
+    light: css`
+      font-family: 'SpoqaHanSansNeo-Light';
+      font-weight: 200;
+    `,
+    regular: css`
+      font-family: 'SpoqaHanSansNeo-Regular';
+      font-weight: 400;
+    `,
+    medium: css`
+      font-family: 'SpoqaHanSansNeo-Medium';
+      font-weight: 500;
+    `,
+    bold: css`
+      font-family: 'SpoqaHanSansNeo-Bold';
+      font-weight: 600;
+    `,
+  },
+};
+
+export {color, layout, font};

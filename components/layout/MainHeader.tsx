@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import {View, Text} from 'react-native';
 
-import {color, layout} from 'styles/Theme';
+import {color, layout, font} from 'styles/Theme';
 
 // COMPONENT main component
 const MainHeaderView: React.FC = () => {
@@ -10,6 +10,11 @@ const MainHeaderView: React.FC = () => {
       <MainHeader.Container>
         <MainHeader.Top.Container>
           <MainHeader.Top.Counter>D+4</MainHeader.Top.Counter>
+          <View>
+            <MainHeader.TodayFeel.Text>
+              오늘의 기분을 표현해보세요
+            </MainHeader.TodayFeel.Text>
+          </View>
         </MainHeader.Top.Container>
       </MainHeader.Container>
     </>
@@ -34,6 +39,16 @@ const MainHeader = {
       color: ${color.main.main};
       font-size: 24px;
       font-weight: bold;
+      ${font.sans.bold}
+      font-family: 'SpoqaHanSansNeo-Bold';
+      font-weight: 600;
+    `,
+  },
+  TodayFeel: {
+    Text: styled.Text`
+      color: ${color.main.main};
+      font-size: 12px;
+      ${font.sans.bold}
     `,
   },
 };
