@@ -4,6 +4,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import {color, layout, font} from 'styles/Theme';
 
 // COMPONENT main component
+// TODO 그림자 적용
 const MainHeaderView: React.FC = () => {
   return (
     <>
