@@ -5,4 +5,8 @@ const mainIcon = {
   MESSAGE: require('./icon/tab_off_ic_message.png'),
 };
 
+// type MainIconType = {
+//   [key: string] : ImageSourcePropType;
+// }
+
 export {mainIcon};
